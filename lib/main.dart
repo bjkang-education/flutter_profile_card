@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:profile_card/sample/profile_screen.dart';
+import 'package:profile_card/sample/text_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: const ProfileScreen());
+    return MaterialApp(
+      theme: ThemeData(fontFamily: 'Sunflower'),
+      home: const TextScreen(),
+    );
   }
 }
