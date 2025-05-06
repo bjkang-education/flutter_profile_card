@@ -7,9 +7,22 @@ class TextScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Text(
-          "기본 텍스트 스타일",
-          style: TextStyle(fontWeight: FontWeight.w400, fontSize: 20),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "Small 텍스트 스타일",
+              style: Theme.of(context).textTheme.displaySmall,
+            ),
+            Text(
+              "Medium 텍스트 스타일",
+              style: Theme.of(context).textTheme.displayMedium,
+            ),
+            Text(
+              "Large 텍스트 스타일",
+              style: Theme.of(context).textTheme.displayLarge,
+            ),
+          ],
         ),
       ),
     );
